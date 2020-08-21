@@ -1,4 +1,4 @@
-const video = document.getElementById('webcamVideo')
+const video = document.getElementById('webcamvideo')
 
 Promise.all([
   faceapi.nets.tinyFaceDetector.loadFromUri('/models'),
@@ -7,7 +7,7 @@ Promise.all([
   faceapi.nets.faceExpressionNet.loadFromUri('/models')
 ]).then(startVideo)
 
-function startVideo(){
+function starVideo(){
   navigator.getUserMedia(
     { video:{} },
     stream => video.src0bject = stream,
